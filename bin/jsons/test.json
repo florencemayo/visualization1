@@ -1,0 +1,10 @@
+{
+	"name":"mkyong.com",
+	"messages":
+               [
+               "Hello flo",
+               "Hi Mayo",
+               "Late dinner"
+               ],
+    "age":100
+}
