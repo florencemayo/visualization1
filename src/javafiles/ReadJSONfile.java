@@ -15,7 +15,7 @@ public class ReadJSONfile {
   public static void main(String [] args){
 	  
 	  try {
-		  // Content to be filled to a java files
+		  // Content to be filled to a json file
 		  // set the name of the package
 		  
 		  String content = "package ";
