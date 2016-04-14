@@ -1,28 +1,988 @@
-{"elementName":"Visibility Control SPA",
-"hasLC":[
-{"elementName":"LC 1",
-	"hasPort":[{"elementName":"PORT 1","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 1"}]},
-{"elementName":"LC 2",
-	"hasPort":[]},
-{"elementName":"LC 3",
-	"hasPort":[{"elementName":"PORT 2","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 2"},{"elementName":"PORT 3","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 3"},{"elementName":"PORT 4","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 4"},{"elementName":"PORT 5","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 5"},{"elementName":"PORT 6","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 6"},{"elementName":"PORT 7","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 7"},{"elementName":"PORT 8","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 8"},{"elementName":"PORT 9","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 9"},{"elementName":"PORT 10","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 10"},{"elementName":"PORT 11","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 11"},{"elementName":"PORT 12","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 12"},{"elementName":"PORT 13","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 13"},{"elementName":"PORT 14","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 14"},{"elementName":"PORT 15","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 15"},{"elementName":"PORT 16","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 16"},{"elementName":"PORT 17","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 17"},{"elementName":"PORT 18","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 18"},{"elementName":"PORT 19","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 19"},{"elementName":"PORT 20","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 20"},{"elementName":"PORT 21","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 21"},{"elementName":"PORT 22","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 22"},{"elementName":"PORT 23","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 23"},{"elementName":"PORT 24","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 24"},{"elementName":"PORT 25","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 25"},{"elementName":"PORT 26","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 26"},{"elementName":"PORT 27","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 27"},{"elementName":"PORT 28","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 28"},{"elementName":"PORT 29","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 29"},{"elementName":"PORT 30","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 30"},{"elementName":"PORT 31","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 31"},{"elementName":"PORT 32","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 32"},{"elementName":"PORT 33","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 33"},{"elementName":"PORT 34","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 34"},{"elementName":"PORT 35","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 35"},{"elementName":"PORT 36","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 36"},{"elementName":"PORT 37","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 37"},{"elementName":"PORT 38","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 38"},{"elementName":"PORT 39","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 39"},{"elementName":"PORT 40","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 40"},{"elementName":"PORT 41","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 41"},{"elementName":"PORT 42","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 42"},{"elementName":"PORT 43","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 43"},{"elementName":"PORT 44","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 44"},{"elementName":"PORT 45","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 45"},{"elementName":"PORT 46","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 46"},{"elementName":"PORT 47","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 47"},{"elementName":"PORT 48","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 48"},{"elementName":"PORT 49","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 49"},{"elementName":"PORT 50","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 50"},{"elementName":"PORT 51","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 51"},{"elementName":"PORT 52","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 52"},{"elementName":"PORT 53","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 53"},{"elementName":"PORT 54","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 54"},{"elementName":"PORT 55","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 55"},{"elementName":"PORT 56","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 56"},{"elementName":"PORT 57","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 57"},{"elementName":"PORT 58","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 58"},{"elementName":"PORT 59","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 59"},{"elementName":"PORT 60","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 60"},{"elementName":"PORT 61","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 61"},{"elementName":"PORT 62","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 62"},{"elementName":"PORT 63","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 63"},{"elementName":"PORT 64","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 64"},{"elementName":"PORT 65","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 65"},{"elementName":"PORT 66","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 66"},{"elementName":"PORT 67","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 67"},{"elementName":"PORT 68","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 68"},{"elementName":"PORT 69","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 69"},{"elementName":"PORT 70","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 70"},{"elementName":"PORT 71","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 71"},{"elementName":"PORT 72","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 72"},{"elementName":"PORT 73","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 73"},{"elementName":"PORT 74","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 74"}]},
-{"elementName":"LC 4",
-	"hasPort":[]},
-{"elementName":"LC 5",
-	"hasPort":[{"elementName":"PORT 75","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 75"}]},
-{"elementName":"LC 6",
-	"hasPort":[{"elementName":"PORT 76","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 2"},{"elementName":"PORT 77","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 28"},{"elementName":"PORT 78","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 40"},{"elementName":"PORT 79","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 69"},{"elementName":"PORT 80","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 29"},{"elementName":"PORT 81","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 50"},{"elementName":"PORT 82","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 55"},{"elementName":"PORT 83","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 76"},{"elementName":"PORT 84","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 14"},{"elementName":"PORT 85","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 44"},{"elementName":"PORT 86","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 77"},{"elementName":"PORT 87","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 68"},{"elementName":"PORT 88","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 67"},{"elementName":"PORT 89","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 65"},{"elementName":"PORT 90","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 20"},{"elementName":"PORT 91","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 22"},{"elementName":"PORT 92","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 78"}]},
-{"elementName":"LC 7",
-	"hasPort":[{"elementName":"PORT 93","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 79"},{"elementName":"PORT 94","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 80"},{"elementName":"PORT 95","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 81"},{"elementName":"PORT 96","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 3"},{"elementName":"PORT 97","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 82"}]},
-{"elementName":"LC 8",
-	"hasPort":[{"elementName":"PORT 98","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 83"}]},
-{"elementName":"LC 9","hasPort":[{"elementName":"PORT 99","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 84"},{"elementName":"PORT 100","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 85"}]},
-{"elementName":"LC 10","hasPort":[{"elementName":"PORT 101","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 42"},{"elementName":"PORT 102","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 76"},{"elementName":"PORT 103","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 74"},{"elementName":"PORT 104","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 52"},{"elementName":"PORT 105","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 57"},{"elementName":"PORT 106","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 23"},{"elementName":"PORT 107","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 40"},{"elementName":"PORT 108","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 47"},{"elementName":"PORT 109","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 49"},{"elementName":"PORT 110","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 77"},{"elementName":"PORT 111","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 31"},{"elementName":"PORT 112","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 11"},{"elementName":"PORT 113","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 26"},{"elementName":"PORT 114","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 78"},{"elementName":"PORT 115","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 86"},{"elementName":"PORT 116","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 4"},{"elementName":"PORT 117","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 73"},{"elementName":"PORT 118","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 3"}]},
-{"elementName":"LC 11","hasPort":[{"elementName":"PORT 119","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 39"}]},
-{"elementName":"LC 12","hasPort":[{"elementName":"PORT 120","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 46"},{"elementName":"PORT 121","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 66"},{"elementName":"PORT 122","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 86"},{"elementName":"PORT 123","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 16"}]},
-{"elementName":"LC 13","hasPort":[{"elementName":"PORT 124","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 24"}]},
-{"elementName":"LC 14","hasPort":[{"elementName":"PORT 125","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 87"},{"elementName":"PORT 126","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 88"},{"elementName":"PORT 127","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 89"}]},
-{"elementName":"LC 15","hasPort":[{"elementName":"PORT 128","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 90"},{"elementName":"PORT 129","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 91"}]},
-{"elementName":"LC 16","hasPort":[{"elementName":"PORT 130","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 92"},{"elementName":"PORT 131","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 93"},{"elementName":"PORT 132","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 94"}]},
-{"elementName":"LC 17","hasPort":[{"elementName":"PORT 133","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 51"},{"elementName":"PORT 134","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 58"},{"elementName":"PORT 135","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 9"},{"elementName":"PORT 136","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 76"},{"elementName":"PORT 137","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 54"},{"elementName":"PORT 138","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 65"},{"elementName":"PORT 139","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 69"},{"elementName":"PORT 140","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 71"},{"elementName":"PORT 141","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 78"},{"elementName":"PORT 142","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 44"},{"elementName":"PORT 143","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 22"},{"elementName":"PORT 144","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 2"},{"elementName":"PORT 145","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 50"},{"elementName":"PORT 146","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 8"},{"elementName":"PORT 147","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 20"},{"elementName":"PORT 148","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 14"},{"elementName":"PORT 149","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 68"}]},
-{"elementName":"LC 18","hasPort":[{"elementName":"PORT 150","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 12"},{"elementName":"PORT 151","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 95"},{"elementName":"PORT 152","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 3"},{"elementName":"PORT 153","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 96"},{"elementName":"PORT 154","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 97"},{"elementName":"PORT 155","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 48"},{"elementName":"PORT 156","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 91"},{"elementName":"PORT 157","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 98"},{"elementName":"PORT 158","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 99"},{"elementName":"PORT 159","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 100"},{"elementName":"PORT 160","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 85"},{"elementName":"PORT 161","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 101"},{"elementName":"PORT 162","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 102"},{"elementName":"PORT 163","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 47"},{"elementName":"PORT 164","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 103"},{"elementName":"PORT 165","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 1"},{"elementName":"PORT 166","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 104"},{"elementName":"PORT 167","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 79"},{"elementName":"PORT 168","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 105"},{"elementName":"PORT 169","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 83"},{"elementName":"PORT 170","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 106"},{"elementName":"PORT 171","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 107"},{"elementName":"PORT 172","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 81"},{"elementName":"PORT 173","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 108"},{"elementName":"PORT 174","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 75"},{"elementName":"PORT 175","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 84"},{"elementName":"PORT 176","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 90"},{"elementName":"PORT 177","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 82"},{"elementName":"PORT 178","IOdirection":"REQUIRE","dataElement":"DATA-ELEM 109"},{"elementName":"PORT 179","IOdirection":"PROVIDE","dataElement":"DATA-ELEM 110"}]}]}
+{
+  "elementName": "Visibility Control SPA",
+  "hasLC": [
+    {
+      "elementName": "LC 1",
+      "hasPort": [
+        {
+          "elementName": "PORT 1",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 1"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 2",
+      "hasPort": []
+    },
+    {
+      "elementName": "LC 3",
+      "hasPort": [
+        {
+          "elementName": "PORT 2",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 2"
+        },
+        {
+          "elementName": "PORT 3",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 3"
+        },
+        {
+          "elementName": "PORT 4",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 4"
+        },
+        {
+          "elementName": "PORT 5",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 5"
+        },
+        {
+          "elementName": "PORT 6",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 6"
+        },
+        {
+          "elementName": "PORT 7",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 7"
+        },
+        {
+          "elementName": "PORT 8",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 8"
+        },
+        {
+          "elementName": "PORT 9",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 9"
+        },
+        {
+          "elementName": "PORT 10",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 10"
+        },
+        {
+          "elementName": "PORT 11",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 11"
+        },
+        {
+          "elementName": "PORT 12",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 12"
+        },
+        {
+          "elementName": "PORT 13",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 13"
+        },
+        {
+          "elementName": "PORT 14",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 14"
+        },
+        {
+          "elementName": "PORT 15",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 15"
+        },
+        {
+          "elementName": "PORT 16",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 16"
+        },
+        {
+          "elementName": "PORT 17",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 17"
+        },
+        {
+          "elementName": "PORT 18",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 18"
+        },
+        {
+          "elementName": "PORT 19",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 19"
+        },
+        {
+          "elementName": "PORT 20",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 20"
+        },
+        {
+          "elementName": "PORT 21",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 21"
+        },
+        {
+          "elementName": "PORT 22",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 22"
+        },
+        {
+          "elementName": "PORT 23",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 23"
+        },
+        {
+          "elementName": "PORT 24",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 24"
+        },
+        {
+          "elementName": "PORT 25",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 25"
+        },
+        {
+          "elementName": "PORT 26",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 26"
+        },
+        {
+          "elementName": "PORT 27",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 27"
+        },
+        {
+          "elementName": "PORT 28",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 28"
+        },
+        {
+          "elementName": "PORT 29",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 29"
+        },
+        {
+          "elementName": "PORT 30",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 30"
+        },
+        {
+          "elementName": "PORT 31",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 31"
+        },
+        {
+          "elementName": "PORT 32",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 32"
+        },
+        {
+          "elementName": "PORT 33",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 33"
+        },
+        {
+          "elementName": "PORT 34",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 34"
+        },
+        {
+          "elementName": "PORT 35",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 35"
+        },
+        {
+          "elementName": "PORT 36",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 36"
+        },
+        {
+          "elementName": "PORT 37",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 37"
+        },
+        {
+          "elementName": "PORT 38",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 38"
+        },
+        {
+          "elementName": "PORT 39",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 39"
+        },
+        {
+          "elementName": "PORT 40",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 40"
+        },
+        {
+          "elementName": "PORT 41",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 41"
+        },
+        {
+          "elementName": "PORT 42",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 42"
+        },
+        {
+          "elementName": "PORT 43",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 43"
+        },
+        {
+          "elementName": "PORT 44",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 44"
+        },
+        {
+          "elementName": "PORT 45",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 45"
+        },
+        {
+          "elementName": "PORT 46",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 46"
+        },
+        {
+          "elementName": "PORT 47",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 47"
+        },
+        {
+          "elementName": "PORT 48",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 48"
+        },
+        {
+          "elementName": "PORT 49",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 49"
+        },
+        {
+          "elementName": "PORT 50",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 50"
+        },
+        {
+          "elementName": "PORT 51",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 51"
+        },
+        {
+          "elementName": "PORT 52",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 52"
+        },
+        {
+          "elementName": "PORT 53",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 53"
+        },
+        {
+          "elementName": "PORT 54",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 54"
+        },
+        {
+          "elementName": "PORT 55",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 55"
+        },
+        {
+          "elementName": "PORT 56",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 56"
+        },
+        {
+          "elementName": "PORT 57",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 57"
+        },
+        {
+          "elementName": "PORT 58",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 58"
+        },
+        {
+          "elementName": "PORT 59",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 59"
+        },
+        {
+          "elementName": "PORT 60",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 60"
+        },
+        {
+          "elementName": "PORT 61",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 61"
+        },
+        {
+          "elementName": "PORT 62",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 62"
+        },
+        {
+          "elementName": "PORT 63",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 63"
+        },
+        {
+          "elementName": "PORT 64",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 64"
+        },
+        {
+          "elementName": "PORT 65",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 65"
+        },
+        {
+          "elementName": "PORT 66",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 66"
+        },
+        {
+          "elementName": "PORT 67",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 67"
+        },
+        {
+          "elementName": "PORT 68",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 68"
+        },
+        {
+          "elementName": "PORT 69",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 69"
+        },
+        {
+          "elementName": "PORT 70",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 70"
+        },
+        {
+          "elementName": "PORT 71",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 71"
+        },
+        {
+          "elementName": "PORT 72",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 72"
+        },
+        {
+          "elementName": "PORT 73",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 73"
+        },
+        {
+          "elementName": "PORT 74",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 74"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 4",
+      "hasPort": []
+    },
+    {
+      "elementName": "LC 5",
+      "hasPort": [
+        {
+          "elementName": "PORT 75",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 75"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 6",
+      "hasPort": [
+        {
+          "elementName": "PORT 76",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 2"
+        },
+        {
+          "elementName": "PORT 77",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 28"
+        },
+        {
+          "elementName": "PORT 78",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 40"
+        },
+        {
+          "elementName": "PORT 79",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 69"
+        },
+        {
+          "elementName": "PORT 80",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 29"
+        },
+        {
+          "elementName": "PORT 81",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 50"
+        },
+        {
+          "elementName": "PORT 82",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 55"
+        },
+        {
+          "elementName": "PORT 83",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 76"
+        },
+        {
+          "elementName": "PORT 84",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 14"
+        },
+        {
+          "elementName": "PORT 85",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 44"
+        },
+        {
+          "elementName": "PORT 86",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 77"
+        },
+        {
+          "elementName": "PORT 87",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 68"
+        },
+        {
+          "elementName": "PORT 88",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 67"
+        },
+        {
+          "elementName": "PORT 89",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 65"
+        },
+        {
+          "elementName": "PORT 90",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 20"
+        },
+        {
+          "elementName": "PORT 91",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 22"
+        },
+        {
+          "elementName": "PORT 92",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 78"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 7",
+      "hasPort": [
+        {
+          "elementName": "PORT 93",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 79"
+        },
+        {
+          "elementName": "PORT 94",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 80"
+        },
+        {
+          "elementName": "PORT 95",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 81"
+        },
+        {
+          "elementName": "PORT 96",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 3"
+        },
+        {
+          "elementName": "PORT 97",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 82"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 8",
+      "hasPort": [
+        {
+          "elementName": "PORT 98",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 83"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 9",
+      "hasPort": [
+        {
+          "elementName": "PORT 99",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 84"
+        },
+        {
+          "elementName": "PORT 100",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 85"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 10",
+      "hasPort": [
+        {
+          "elementName": "PORT 101",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 42"
+        },
+        {
+          "elementName": "PORT 102",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 76"
+        },
+        {
+          "elementName": "PORT 103",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 74"
+        },
+        {
+          "elementName": "PORT 104",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 52"
+        },
+        {
+          "elementName": "PORT 105",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 57"
+        },
+        {
+          "elementName": "PORT 106",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 23"
+        },
+        {
+          "elementName": "PORT 107",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 40"
+        },
+        {
+          "elementName": "PORT 108",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 47"
+        },
+        {
+          "elementName": "PORT 109",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 49"
+        },
+        {
+          "elementName": "PORT 110",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 77"
+        },
+        {
+          "elementName": "PORT 111",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 31"
+        },
+        {
+          "elementName": "PORT 112",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 11"
+        },
+        {
+          "elementName": "PORT 113",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 26"
+        },
+        {
+          "elementName": "PORT 114",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 78"
+        },
+        {
+          "elementName": "PORT 115",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 86"
+        },
+        {
+          "elementName": "PORT 116",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 4"
+        },
+        {
+          "elementName": "PORT 117",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 73"
+        },
+        {
+          "elementName": "PORT 118",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 3"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 11",
+      "hasPort": [
+        {
+          "elementName": "PORT 119",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 39"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 12",
+      "hasPort": [
+        {
+          "elementName": "PORT 120",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 46"
+        },
+        {
+          "elementName": "PORT 121",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 66"
+        },
+        {
+          "elementName": "PORT 122",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 86"
+        },
+        {
+          "elementName": "PORT 123",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 16"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 13",
+      "hasPort": [
+        {
+          "elementName": "PORT 124",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 24"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 14",
+      "hasPort": [
+        {
+          "elementName": "PORT 125",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 87"
+        },
+        {
+          "elementName": "PORT 126",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 88"
+        },
+        {
+          "elementName": "PORT 127",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 89"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 15",
+      "hasPort": [
+        {
+          "elementName": "PORT 128",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 90"
+        },
+        {
+          "elementName": "PORT 129",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 91"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 16",
+      "hasPort": [
+        {
+          "elementName": "PORT 130",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 92"
+        },
+        {
+          "elementName": "PORT 131",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 93"
+        },
+        {
+          "elementName": "PORT 132",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 94"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 17",
+      "hasPort": [
+        {
+          "elementName": "PORT 133",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 51"
+        },
+        {
+          "elementName": "PORT 134",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 58"
+        },
+        {
+          "elementName": "PORT 135",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 9"
+        },
+        {
+          "elementName": "PORT 136",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 76"
+        },
+        {
+          "elementName": "PORT 137",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 54"
+        },
+        {
+          "elementName": "PORT 138",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 65"
+        },
+        {
+          "elementName": "PORT 139",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 69"
+        },
+        {
+          "elementName": "PORT 140",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 71"
+        },
+        {
+          "elementName": "PORT 141",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 78"
+        },
+        {
+          "elementName": "PORT 142",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 44"
+        },
+        {
+          "elementName": "PORT 143",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 22"
+        },
+        {
+          "elementName": "PORT 144",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 2"
+        },
+        {
+          "elementName": "PORT 145",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 50"
+        },
+        {
+          "elementName": "PORT 146",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 8"
+        },
+        {
+          "elementName": "PORT 147",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 20"
+        },
+        {
+          "elementName": "PORT 148",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 14"
+        },
+        {
+          "elementName": "PORT 149",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 68"
+        }
+      ]
+    },
+    {
+      "elementName": "LC 18",
+      "hasPort": [
+        {
+          "elementName": "PORT 150",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 12"
+        },
+        {
+          "elementName": "PORT 151",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 95"
+        },
+        {
+          "elementName": "PORT 152",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 3"
+        },
+        {
+          "elementName": "PORT 153",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 96"
+        },
+        {
+          "elementName": "PORT 154",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 97"
+        },
+        {
+          "elementName": "PORT 155",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 48"
+        },
+        {
+          "elementName": "PORT 156",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 91"
+        },
+        {
+          "elementName": "PORT 157",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 98"
+        },
+        {
+          "elementName": "PORT 158",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 99"
+        },
+        {
+          "elementName": "PORT 159",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 100"
+        },
+        {
+          "elementName": "PORT 160",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 85"
+        },
+        {
+          "elementName": "PORT 161",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 101"
+        },
+        {
+          "elementName": "PORT 162",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 102"
+        },
+        {
+          "elementName": "PORT 163",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 47"
+        },
+        {
+          "elementName": "PORT 164",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 103"
+        },
+        {
+          "elementName": "PORT 165",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 1"
+        },
+        {
+          "elementName": "PORT 166",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 104"
+        },
+        {
+          "elementName": "PORT 167",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 79"
+        },
+        {
+          "elementName": "PORT 168",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 105"
+        },
+        {
+          "elementName": "PORT 169",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 83"
+        },
+        {
+          "elementName": "PORT 170",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 106"
+        },
+        {
+          "elementName": "PORT 171",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 107"
+        },
+        {
+          "elementName": "PORT 172",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 81"
+        },
+        {
+          "elementName": "PORT 173",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 108"
+        },
+        {
+          "elementName": "PORT 174",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 75"
+        },
+        {
+          "elementName": "PORT 175",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 84"
+        },
+        {
+          "elementName": "PORT 176",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 90"
+        },
+        {
+          "elementName": "PORT 177",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 82"
+        },
+        {
+          "elementName": "PORT 178",
+          "IOdirection": "REQUIRE",
+          "dataElement": "DATA-ELEM 109"
+        },
+        {
+          "elementName": "PORT 179",
+          "IOdirection": "PROVIDE",
+          "dataElement": "DATA-ELEM 110"
+        }
+      ]
+    }
+  ]
+}

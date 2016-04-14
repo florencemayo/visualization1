@@ -1,12 +1,12 @@
-package javafiles;
+package metamodel;
 
 import java.util.List;
 
-class Example {
+public class Subsystem {
 	
 	private String elementName;
 	
-	private List<HasLC> hasLC;
+	private List<LogicalComponent> hasLC;
 
 	public String getElementName() {
 		return elementName;
@@ -16,11 +16,11 @@ class Example {
 		this.elementName = elementName;
 	}
 
-	public List<HasLC> getHasLC() {
+	public List<LogicalComponent> getHasLC() {
 		return hasLC;
 	}
 
-	public void setHasLC(List<HasLC> hasLC) {
+	public void setHasLC(List<LogicalComponent> hasLC) {
 		this.hasLC = hasLC;
 	}
 	

@@ -1,14 +1,12 @@
-package javafiles;
+package metamodel;
 
-//import java.util.ArrayList;
 import java.util.List;
 
-public class HasLC {
+public class LogicalComponent {
 
 	private String elementName;
 	
-	private List<HasPort> hasPort;
-	//=new ArrayList<HasPort>();
+	private List<Port> hasPort;
 
 	public String getElementName() {
 		return elementName;
@@ -18,11 +16,11 @@ public class HasLC {
 		this.elementName = elementName;
 	}
 
-	public List<HasPort> getHasPort() {
+	public List<Port> getHasPort() {
 		return hasPort;
 	}
 
-	public void setHasPort(List<HasPort> hasPort) {
+	public void setHasPort(List<Port> hasPort) {
 		this.hasPort = hasPort;
 	}
 	

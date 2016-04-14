@@ -1,4 +1,4 @@
-package javafiles;
+package fileOptimizer;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -15,16 +15,23 @@ import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
-public class WriteToJsonFile {
+import metamodel.Subsystem;
+import metamodel.LogicalComponent;
+import metamodel.Port;
+
+public class JsonOptimizer {
 	public static void main(String[] args){
 	    
-		//INITIALIZE A STRING TO copy the content;
-		String content="";
+		//initialize a string to carry a JSON file content;
+		String optimizedContent="";
 		
-		//Take an example
-		Example subsystem=new Example();
+		//initialize a subsystem
+		Subsystem subsystem=new Subsystem();
 
-		//READ FROM A FILE
+		/*
+		 * read from a JSON file <source> 
+		 * the file directory can be replaced as an API later on
+		*/
 		JsonParser parser = new JsonParser();
 		JsonElement element=null;
 		try {
@@ -37,40 +44,42 @@ public class WriteToJsonFile {
 				e.printStackTrace();
 			}
 		
-		//set-up for creating a JSON output
+		//initial set-up for making a JSON output
 		GsonBuilder builder = new GsonBuilder();
-		Gson gson =builder.create();
+		Gson gson =builder.setPrettyPrinting().create();
 		
-		//MANIPULATE JSON FILE
+		/*
+		 * read the content of the JSON source file/
+		 * save to a new variables
+		*/
 		if (element.isJsonObject()){
 			JsonObject ct=element.getAsJsonObject();
-			//System.out.println(ct.get("elementName").getAsString());
-
+			
+			//get the name of the subsystem from a file
 			subsystem.setElementName(ct.get("elementName").getAsString());
             
+			//get a JSON array from a file
 			JsonArray contentRelations =ct.getAsJsonArray("contentRelations");
 			
-			//Initiate a list of components, and list of ports
-			List<HasLC> listComponents = new ArrayList<HasLC>();
+			//initialize a list of components
+			List<LogicalComponent> listComponents = new ArrayList<LogicalComponent>();
 			
-			
-			//Open bracket for the LCs
 			for (int i=0;i<contentRelations.size();i++){
+				//get a JSON object inside a JSON array
 				JsonObject ctr = contentRelations.get(i).getAsJsonObject();
-				JsonObject dest=(JsonObject) ctr.get("destination");
-				
+				JsonObject dest=(JsonObject) ctr.get("destination");	
 			
 				if (dest.get("className").getAsString().equals("LC")) {
-				//Initialize hasLC
-				HasLC component = new HasLC();	
+				//initialize logical component
+				LogicalComponent component = new LogicalComponent();	
 				
-				//each LC has its own ports
-				List<HasPort> hasPorts = new ArrayList<HasPort>();
+				//initialize a list of ports for each logical component
+				List<Port> listPorts = new ArrayList<Port>();
 
-			    //set the name of the component and add lc to a list of component
-			    component.setElementName(dest.get("elementName").getAsString());
+				//get the name of the component from a file
+				component.setElementName(dest.get("elementName").getAsString());
 
-                //PRINT ALL PORTS and the direction of a port
+                //a loop to get all ports of a LogicalComponent from a file
 				JsonArray contentRelationsDest =dest.getAsJsonArray("contentRelations");
 				JsonObject destP=new JsonObject();
 				for (int j=0;j<contentRelationsDest.size();j++){
@@ -78,56 +87,52 @@ public class WriteToJsonFile {
 					destP=(JsonObject) ctrP.get("destination");
 					
 					if (destP.get("className").getAsString().equals("PORT")){
-				    //System.out.println("PORT NAME :"+destP.get("elementName").getAsString());
-				    	
-				    //Initialize hasPorts
-				    HasPort port = new HasPort();
+				    //initialize port
+				    Port port = new Port();
 				    
-				    //add name of the port
+				    //get the name of the port from a file
 				    port.setElementName(destP.get("elementName").getAsString());
 				    
-				    //loop through the list to get only a data elem of the port
+				    //a loop to get data element of a port from a file
 					JsonArray contentRelationsDestPort=destP.getAsJsonArray("contentRelations");
 					int k=0;
 					while(k<contentRelationsDestPort.size()){
 						JsonObject ctrpElem =contentRelationsDestPort.get(k).getAsJsonObject();
 						JsonObject destElem=(JsonObject)ctrpElem.get("destination");
 						if (destElem.get("className").getAsString().equals("DATA-ELEM")) {
-							//add the name of the data element
+							//get the name of the data element from a file
 							port.setDataElement(destElem.get("elementName").getAsString());
 						    k++;
 						    }
 					}
 					
-					//PRINT ALL IODIRECTION
+					//initialize a JSON object that holds a IO direction of a port from a file
 				    JsonObject ctrPIO=destP.get("attributes").getAsJsonObject();
 				    
-				    //add the name of the iodirection to the port
+				    //get the IO direction of a port from a file
 				    port.setIOdirection(ctrPIO.get("IODirection").getAsString());
 				    
-				    //add a port to a list, list of ports in a single lc
-				    hasPorts.add(port);
+				    //add a port to list of ports
+				    listPorts.add(port);
 				    }
 				 }
-				//add all ports belong to the lc
-				component.setHasPort(hasPorts);
+				//add a list of ports to a LogicalComponent
+				component.setHasPort(listPorts);
 				
-				//add an lc to a list of components
+				//add a LogicalComponent to a list of logical components
 				listComponents.add(component);
 				}
 			}
 			
-			//add the list of lcs to a subsystem
+			//add the list of logical components to a subsystem
 			subsystem.setHasLC(listComponents);
 			
-			//Produce an output of a json
+			//make an optimized JSON output
 			System.out.println(gson.toJson(subsystem));
-			content+=gson.toJson(subsystem);
-			
-			
+			optimizedContent+=gson.toJson(subsystem);
 		}
 		
-		//WRITE TO A NEW JSON FILE
+		//write the optimized JSON output to a file
 		try {
 		File file = new File("E://programs/eclipse/workspace/Visualization1/src/jsons/Visibility Control SPA.json");
 		
@@ -138,14 +143,10 @@ public class WriteToJsonFile {
 
 		FileWriter fw = new FileWriter (file.getAbsolutePath());
 		BufferedWriter bw = new BufferedWriter(fw);
-		bw.write(content);
+		bw.write(optimizedContent);
 		bw.close();
-
-		System.out.println("DONE");
-	} catch (IOException e){
-      e.printStackTrace();
-	}
-
-
-	}
+        } catch (IOException e){
+           e.printStackTrace();
+	    }
+   }
 }

@@ -1,6 +1,6 @@
-package javafiles;
+package metamodel;
 
-public class HasPort {
+public class Port {
    
 	private String elementName;
 	
