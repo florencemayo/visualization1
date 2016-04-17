@@ -1,4 +1,5 @@
 package componentDiagram;
+import java.beans.PropertyChangeEvent;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
@@ -23,12 +24,11 @@ public class UMLComponentFigureTest {
 	
 	public static void main(String args []){
 					
-		
-		
 		JsonParser parser = new JsonParser();
 		JsonElement element=null;
 		try {
-				FileReader fr =new FileReader("E://programs/eclipse/workspace/visualization1/src/jsons/vcspa.json");
+				FileReader fr =new FileReader(
+						"E://programs/eclipse/workspace/visualization1/src/jsons/vcspa_2.json");
 				element = parser.parse(fr);
 				fr.close();
 			} catch (FileNotFoundException e) {
@@ -41,102 +41,105 @@ public class UMLComponentFigureTest {
 			JsonObject ct=element.getAsJsonObject();
 			
 			//get the name of the subsystem from a file
-			//subsystem.setElementName(ct.get("elementName").getAsString());
 			Display display=new Display();
 			final Shell shell=new Shell(display);
 			shell.setSize(1000,400);
-			shell.setText("UMLComponentFigure");
+			shell.setText(ct.get("elementName").getAsString());
+			
 			LightweightSystem lws=new LightweightSystem(shell);
 			
 			Figure contents = new Figure();
-			XYLayout contentsLayout = new XYLayout();
+		    XYLayout contentsLayout = new XYLayout();
 			contents.setLayoutManager(contentsLayout);
+			
+			Font componentFont = new Font (null, "Arial", 12, SWT.BOLD);
             
 			//get a JSON array from a file
-			JsonArray contentRelations =ct.getAsJsonArray("contentRelations");
+			JsonArray components =ct.getAsJsonArray("hasLC");
+			
+			UMLComponentFigure componentFigure=null;
+			//componentFigure1=null;
+			//PolylineConnection connection=null;
+						
+			//------------------------------------------------------------------------------------------
+			//draw the LCs
 			int x=10, y=10; int count=1;
-			for (int i=0;i<contentRelations.size();i++){
+			
+			
+			
+			//End draw LCs
+			for (int i=0;i<components.size();i++){
 				//get a JSON object inside a JSON array
-				JsonObject ctr = contentRelations.get(i).getAsJsonObject();
-				JsonObject dest=(JsonObject) ctr.get("destination");	
+				JsonObject lc1 = components.get(i).getAsJsonObject();
 				
-				if (dest.get("className").getAsString().equals("LC")) {
-								
 				//get the name of the component from a file
-				Font componentFont = new Font (null, "Arial", 12, SWT.BOLD);
-				Label componentLabel = new Label(dest.get("elementName").getAsString());
+				Label componentLabel = new Label(lc1.get("elementName").getAsString());
 				componentLabel.setFont(componentFont);
 				
-				UMLComponentFigure componentFigure = new UMLComponentFigure(componentLabel);
+				componentFigure = new UMLComponentFigure(componentLabel);
 				
-				
-
-                //a loop to get all ports of a LogicalComponent from a file
-				JsonArray contentRelationsDest =dest.getAsJsonArray("contentRelations");
-				JsonObject destP=new JsonObject();
-				for (int j=0;j<contentRelationsDest.size();j++){
-					JsonObject ctrP = contentRelationsDest.get(j).getAsJsonObject();
-					destP=(JsonObject) ctrP.get("destination");
-					
-					if (destP.get("className").getAsString().equals("PORT")){
-				   
-				    //get the name of the port from a file
-				    //port.setElementName(destP.get("elementName").getAsString());
-				    
-				    //Label attribute =new Label("DATA-ELEM", new Image (display,
-				    /*Label portName =new Label(destP.get("elementName").getAsString(), new Image (display,
-					        UMLComponentFigure.class.getResourceAsStream("field_obj.png")));
-					componentFigure.getInfoFigure().add(portName);*/
-				    
-				    //a loop to get data element of a port from a file
-					JsonArray contentRelationsDestPort=destP.getAsJsonArray("contentRelations");
-					int k=0;
-					while(k<contentRelationsDestPort.size()){
-						JsonObject ctrpElem =contentRelationsDestPort.get(k).getAsJsonObject();
-						JsonObject destElem=(JsonObject)ctrpElem.get("destination");
-						if (destElem.get("className").getAsString().equals("DATA-ELEM")) {
-							//get the name of the data element from a file
-							//port.setDataElement(destElem.get("elementName").getAsString());
-							
-							//label for data elem
-							/*Label dataElemName =new Label(destElem.get("elementName").getAsString(), new Image (display,
-							        UMLComponentFigure.class.getResourceAsStream("field_obj.png")));
-							componentFigure.getInfoFigure().add(dataElemName);*/
-						    
-							k++;
-						    }
-					}
-					
-					//initialize a JSON object that holds a IO direction of a port from a file
-				    JsonObject ctrPIO=destP.get("attributes").getAsJsonObject();
-				    
-				    //get the IO direction of a port from a file
-				    //port.setIOdirection(ctrPIO.get("IODirection").getAsString());
-				    
-				   
-				    }
-				 }
 				Rectangle rec = new Rectangle(x,y,-1,-1); 
 				x=(count % 10)*100;
 				y=y+10;
 				count++;
 				contentsLayout.setConstraint(componentFigure, rec);
-				
-				/*Creating connection
-				PolylineConnection connection = new PolylineConnection();
-				ChopboxAnchor sourceAnchor = new ChopboxAnchor(componentFigure);
-				ChopboxAnchor targetAnchor = new ChopboxAnchor(componentFigure);
-				connection.setSourceAnchor(sourceAnchor);
-				connection.setTargetAnchor(targetAnchor);
-				*/
-				
-				//Creating decoration for a port that provide
-				//Creating a decoration for a port that requires
-				
 				contents.add(componentFigure);
-				//contents.add(connection);
+				
+	            //get ports of lc1	
+				JsonArray ports =lc1.getAsJsonArray("hasPort");
+				for (int j=0;j<ports.size();j++){
+					JsonObject port = ports.get(j).getAsJsonObject();
+					String dataElem1=port.get("dataElement").getAsString();
+					
+				    //second loop to check the remain LCS
+					for (int k=i+1;k<components.size();k++){
+						//get a JSON object inside a JSON array
+						JsonObject lc2 = components.get(k).getAsJsonObject();
+						
+						//get the name of the component from a file
+						//Label componentLabel1 = new Label(lc2.get("elementName").getAsString());
+						//componentLabel1.setFont(componentFont);
+						
+						//componentFigure1 = new UMLComponentFigure(componentLabel1);
+						
+						//Rectangle rec1 = new Rectangle(x,y,-1,-1); 
+						//x=(count % 10)*100;
+						//y=y+10;
+						//count++;
+						//contentsLayout.setConstraint(componentFigure1, rec1);
+						//contents.add(componentFigure1);
+						
+						
+						//get ports of lc1
+						JsonArray ports1 =lc2.getAsJsonArray("hasPort");
+						for (int m=0;m<ports1.size();m++){
+							JsonObject port1 = ports1.get(m).getAsJsonObject();
+							String dataElem2=port1.get("dataElement").getAsString();
+							 
+							// if statement
+							String names="lala";
+						    if (dataElem1.equals(dataElem2) && !(port.equals(port1))){
+						    	    
+						    	    //make connection
+						    	    /*connection = new PolylineConnection();
+									ChopboxAnchor sourceAnchor = new ChopboxAnchor(componentFigure);
+									ChopboxAnchor targetAnchor = new ChopboxAnchor(componentFigure1);
+									connection.setSourceAnchor(sourceAnchor);
+									connection.setTargetAnchor(targetAnchor);
+									contents.add(connection);*/
+						    	    names = port.get("elementName").getAsString()+"_"+
+						    			port1.get("elementName").getAsString()+"_"+dataElem1;
+						    	    Label attribute = new Label(names, new Image (display,UMLComponentFigure.class.getResourceAsStream("field_obj.png")));
+						    	    componentFigure.getInfoFigure().add(attribute);
+						    } 
+						 }
+					}
+					
 				}
+				
 			}
+			//Creating decoration for a port that provide
+			//Creating a decoration for a port that requires
 			lws.setContents(contents);
 			shell.open();
 			while(!shell.isDisposed())

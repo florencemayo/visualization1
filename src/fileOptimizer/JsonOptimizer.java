@@ -134,7 +134,7 @@ public class JsonOptimizer {
 		
 		//write the optimized JSON output to a file
 		try {
-		File file = new File("E://programs/eclipse/workspace/Visualization1/src/jsons/Visibility Control SPA.json");
+		File file = new File("E://programs/eclipse/workspace/Visualization1/src/jsons/vcspa_2.json");
 		
 		//check if the file exists
 		if (!file.exists()){
