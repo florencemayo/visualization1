@@ -44,25 +44,24 @@ public class UMLComponentFigureTest {
 			//subsystem.setElementName(ct.get("elementName").getAsString());
 			Display display=new Display();
 			final Shell shell=new Shell(display);
-			shell.setSize(400,400);
+			shell.setSize(1000,400);
 			shell.setText("UMLComponentFigure");
 			LightweightSystem lws=new LightweightSystem(shell);
+			
+			Figure contents = new Figure();
+			XYLayout contentsLayout = new XYLayout();
+			contents.setLayoutManager(contentsLayout);
             
 			//get a JSON array from a file
 			JsonArray contentRelations =ct.getAsJsonArray("contentRelations");
-			
+			int x=10, y=10; int count=1;
 			for (int i=0;i<contentRelations.size();i++){
 				//get a JSON object inside a JSON array
 				JsonObject ctr = contentRelations.get(i).getAsJsonObject();
 				JsonObject dest=(JsonObject) ctr.get("destination");	
 				
 				if (dest.get("className").getAsString().equals("LC")) {
-				
-				
-				Figure contents = new Figure();
-				XYLayout contentsLayout = new XYLayout();
-				contents.setLayoutManager(contentsLayout);
-					
+								
 				//get the name of the component from a file
 				Font componentFont = new Font (null, "Arial", 12, SWT.BOLD);
 				Label componentLabel = new Label(dest.get("elementName").getAsString());
@@ -85,9 +84,9 @@ public class UMLComponentFigureTest {
 				    //port.setElementName(destP.get("elementName").getAsString());
 				    
 				    //Label attribute =new Label("DATA-ELEM", new Image (display,
-				    Label portName =new Label(destP.get("elementName").getAsString(), new Image (display,
+				    /*Label portName =new Label(destP.get("elementName").getAsString(), new Image (display,
 					        UMLComponentFigure.class.getResourceAsStream("field_obj.png")));
-					componentFigure.getInfoFigure().add(portName);
+					componentFigure.getInfoFigure().add(portName);*/
 				    
 				    //a loop to get data element of a port from a file
 					JsonArray contentRelationsDestPort=destP.getAsJsonArray("contentRelations");
@@ -100,9 +99,9 @@ public class UMLComponentFigureTest {
 							//port.setDataElement(destElem.get("elementName").getAsString());
 							
 							//label for data elem
-							Label dataElemName =new Label(destElem.get("elementName").getAsString(), new Image (display,
+							/*Label dataElemName =new Label(destElem.get("elementName").getAsString(), new Image (display,
 							        UMLComponentFigure.class.getResourceAsStream("field_obj.png")));
-							componentFigure.getInfoFigure().add(dataElemName);
+							componentFigure.getInfoFigure().add(dataElemName);*/
 						    
 							k++;
 						    }
@@ -117,9 +116,12 @@ public class UMLComponentFigureTest {
 				   
 				    }
 				 }
-				int x=i*10, y=i*10;
-				Rectangle rec = new Rectangle(x,y,-1,-1);
+				Rectangle rec = new Rectangle(x,y,-1,-1); 
+				x=(count % 10)*100;
+				y=y+10;
+				count++;
 				contentsLayout.setConstraint(componentFigure, rec);
+				
 				/*Creating connection
 				PolylineConnection connection = new PolylineConnection();
 				ChopboxAnchor sourceAnchor = new ChopboxAnchor(componentFigure);
@@ -133,15 +135,13 @@ public class UMLComponentFigureTest {
 				
 				contents.add(componentFigure);
 				//contents.add(connection);
-				lws.setContents(contents);
-				shell.open();
-				while(!shell.isDisposed())
-					while (!display.readAndDispatch())
-						display.sleep();
 				}
-			}		
+			}
+			lws.setContents(contents);
+			shell.open();
+			while(!shell.isDisposed())
+				while (!display.readAndDispatch())
+					display.sleep();
 		}
-		
-		
 	}
 }
