@@ -16,8 +16,11 @@ public class UMLComponentFigure extends Figure {
 		setBackgroundColor(componentColor);
 		setOpaque(true);
 		
+		
 		add(name);
 		add(infoFigure);
+		
+		new MyListener(this);
 	}
 	
 	public CompartmentFigure getInfoFigure(){
